@@ -1,4 +1,4 @@
 MediaGun
 ========
 
-Application CameraRecorder, \n /nCheck Note in Video
+Application CameraRecorder, Check Note in Video
