@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/anonymous_setting" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SETTING"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     $ On Music Click?     "
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:typeface="serif" />
+
+                <CheckBox
+                    android:id="@+id/cbOnMusicClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     $ On Music In BackGround?     "
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:typeface="serif" />
+
+                <CheckBox
+                    android:id="@+id/cbOnMusicInBackGround"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     $ On Click Effect?     "
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:typeface="serif" />
+
+                <CheckBox
+                    android:id="@+id/cbOnClickEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:alpha="0.5"
+            android:columnCount="2" >
+
+            <TextView
+                android:id="@+id/tvCancelUpdateSettingApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right|top"
+                android:layout_row="0"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tvUpdateSettingApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:typeface="serif" />
+        </GridLayout>
+    </RelativeLayout>
+
+</LinearLayout>
